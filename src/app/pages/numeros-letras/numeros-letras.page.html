@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Números a Letras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-input
+      label="Ingrese un número del 1 al 1000"
+      labelPlacement="stacked"
+      type="number"
+      [(ngModel)]="numero">
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="convertir()">
+    Convertir
+  </ion-button>
+
+  <h2>{{ resultado }}</h2>
+
+</ion-content>
